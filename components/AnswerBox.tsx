@@ -1,7 +1,7 @@
 import React from 'react'; 
 import { MainBox } from '../styles/answerBox';
 
-export const AnswerBox = ({answer} :{answer?: string}) => { 
+export const AnswerBox = ({answer} :{answer?: string|null}) => { 
   console.log();
   
   return ( 
