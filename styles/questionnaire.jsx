@@ -52,7 +52,7 @@ export const Input = styled.input`
 export const MainBttn = styled.button`
   color: white;
   background: #2E3D58;
-  opacity: ${props => props.disabled ? 1 : 0.4};
+  opacity: ${props => props.opacity ? 1 : 0.4};
   border: none;
   font-size: 18px;
   border-radius: 12px;
@@ -61,7 +61,7 @@ export const MainBttn = styled.button`
   align-items: center;
   padding: 0px 13px;
   gap: 11px;
-  cursor: ${props => props.disabled ? 'pointer' : 'not-allowed'};
+  cursor: ${props => props.opacity ? 'pointer' : 'not-allowed'};
   transition: all 0.41s;
     :focus { 
       outline: none

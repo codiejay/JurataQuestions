@@ -14,13 +14,23 @@ export const MainBox = Styled.div `
   }
     h1 { 
       color: #2E3D58;
+      font-family: 'Merriweather', serif;
+      margin: 0;
     }
     span { 
       color: #80808067;
       font-style: italic;
+      margin-top: 2rem;
+      display: block;
     }
     p { 
       line-height: 1.7;
+      color: #2E3D58;
+      margin-top: 2rem;
+    }
+    a { 
+      color: #69c2b4;
+      font-weight: 400;
     }
     @media (max-width: 1145px) { 
       margin-top: 3rem;
