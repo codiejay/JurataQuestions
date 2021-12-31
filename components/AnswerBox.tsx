@@ -1,9 +1,12 @@
 import React from 'react'; 
 import { MainBox } from '../styles/answerBox';
 
-export const AnswerBox = ({answer, url} :{answer?: string|null, url?: string}) => { 
-  console.log();
+export const AnswerBox = (
+  {answer, url} 
+  :{answer: string|null, url: string
+  }) => 
   
+  {
   return ( 
     <MainBox>
       <h1>Answers:</h1>

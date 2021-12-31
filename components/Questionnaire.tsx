@@ -2,7 +2,7 @@ import React from 'react';
 import { Grid, QuestionContainer, Input, MainBttn } from '../styles/questionnaire';
 import {BiCheck} from 'react-icons/bi'
 import { AnswerBox } from './AnswerBox';
-import {gql, useQuery} from '@apollo/client';
+import {gql} from '@apollo/client';
 import {
   ApolloClient,
   InMemoryCache,
@@ -23,7 +23,7 @@ const restLink = new RestLink({
 const client = new ApolloClient({
   link: restLink,
   cache: new InMemoryCache(),
-})
+});
 
 
 //Querying with GRAPHQL and listing data we are interested in getting back ie: answer, url.
@@ -41,7 +41,7 @@ export const  Questionnaire = () => {
   //Hooks
   let router = useRouter();
   const [question, setQuestion] = React.useState<string | null>();
-  const [response, setResponse] = React.useState<{answer: string, url: string}>({ 
+  const [response, setResponse] = React.useState<{answer: string, url: string}>({
     answer: '',
     url: '',
   });
@@ -73,7 +73,7 @@ React.useEffect(() => {
 //component's functions
 const handleQuestionChange = (event: any) => { 
   setQuestion(event.target.value)
-}
+};
 
 const HandleQuestionSubmit = (event: any) => { 
   event.preventDefault();
@@ -92,11 +92,14 @@ const HandleQuestionSubmit = (event: any) => {
               onChange={handleQuestionChange}
               value={question ? question : ''}
             />
+            <MainBttn 
+              opacity={question} 
+              onClick={HandleQuestionSubmit}
+            >
+              <BiCheck fontSize='24px'/>
+              <p>Press Enter To Submit</p>
+            </MainBttn>
           </form>
-          <MainBttn opacity={question} onClick={HandleQuestionSubmit}>
-            <BiCheck fontSize='24px'/>
-            <p>Press Enter To Submit</p>
-          </MainBttn>
         </div>
         <AnswerBox 
           answer={response?.answer && response?.answer } 

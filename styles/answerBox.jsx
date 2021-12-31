@@ -9,8 +9,8 @@ export const MainBox = Styled.div `
   padding: 10% 10%;
   box-shadow: -1px 0px 20px 5px #2e3d5826;
   ::-webkit-scrollbar {
-    width: 0;  /* Remove scrollbar space */
-    background: transparent;  /* Optional: just make scrollbar invisible */
+    width: 0;
+    background: transparent;  
   }
     h1 { 
       color: #2E3D58;
@@ -35,5 +35,8 @@ export const MainBox = Styled.div `
     @media (max-width: 1145px) { 
       margin-top: 3rem;
       width: 100%;
+        h1 { 
+          font-size: 25px;
+        }
     }
 `
