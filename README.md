@@ -11,9 +11,9 @@ Now let's walk through how to run this application locally and how it is set up.
 
 2. Or directly clone it into your computer using `git clone https://github.com/codiejay/JurataQuestions.git` 
 
-3. We are running `Yarn` on this project so to install the packages we are using you will have to run `yarn install`
+3. We are running `Yarn` to manage this project's packages. So to get started we will need to run: `yarn install`. This command install all the needed packages locally into our computer. 
 
-4. Now that you have the project locally you can now run the project on your local machine by running `yarn dev` 
+4. Now that you have the project locally on your computer, you can now start the project by running `yarn dev`.
 
 5. 🎉 Yay, the project should now be live on `http://localhost:3000/`. 
 
