@@ -2,7 +2,7 @@
 # ✨ JurataQuestions ✨ 
 Hello there, 
 
-In simple terms this application allows a users to send a question and it returns an answer.
+In simple terms this application allows a users to ask questions and it returns answers 🔥.
 
 Now let's walk through how to run this application locally and how it is set up. 
 
